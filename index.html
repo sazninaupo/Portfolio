@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="icon" type="image/png" href="img/upoma.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -243,12 +244,6 @@
       transform: translateX(4px);
     }
 
-    /* ── cert card hover ── */
-    .cert-card {
-      transition: background 0.25s, padding-left 0.3s cubic-bezier(0.16,1,0.3,1);
-    }
-    .cert-card:hover { background: #f0eeff; padding-left: 44px; }
-    .cert-card.cert-add:hover { background: #f8f7ff; padding-left: 32px; }
 
     /* ── proj bubble ── */
     #proj-bubble {
@@ -337,17 +332,25 @@
 <!-- ══════════════════ NAV ══════════════════ -->
 <nav id="nav" class="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-16 py-6 transition-all duration-500 max-[960px]:px-6 max-[960px]:py-[18px]">
   <div class="nav-logo">
-    <img src="img/upoma.png" alt="Logo" class="w-[30px] h-auto">
+    <!-- <img src="img/upoma.png" alt="Logo" class="w-[30px] h-auto"> -->
+ <a href="#">
+  <img src="img/upoma.png" alt="Logo" class="w-[40px] h-auto">
+</a>
   </div>
   <ul class="flex gap-10 list-none max-[960px]:hidden">
     <li><a href="#about"         class="font-body text-[0.82rem] font-medium text-muted tracking-wide hover:text-dp transition-colors duration-200">About</a></li>
     <li><a href="#roles"         class="font-body text-[0.82rem] font-medium text-muted tracking-wide hover:text-dp transition-colors duration-200">Roles</a></li>
     <li><a href="#projects"      class="font-body text-[0.82rem] font-medium text-muted tracking-wide hover:text-dp transition-colors duration-200">Work</a></li>
-    <li><a href="#certifications"class="font-body text-[0.82rem] font-medium text-muted tracking-wide hover:text-dp transition-colors duration-200">Certs</a></li>
+    <!-- <li><a href="#certifications"class="font-body text-[0.82rem] font-medium text-muted tracking-wide hover:text-dp transition-colors duration-200">Certs</a></li> -->
     <li><a href="#education"     class="font-body text-[0.82rem] font-medium text-muted tracking-wide hover:text-dp transition-colors duration-200">Education</a></li>
     <li><a href="#contact"       class="font-body text-[0.82rem] font-medium text-muted tracking-wide hover:text-dp transition-colors duration-200">Contact</a></li>
   </ul>
-  <a href="mailto:saznina21@gmail.com" class="magnetic font-mono text-[0.75rem] tracking-[0.06em] px-6 py-[10px] bg-dp text-white rounded-full hover:bg-accent hover:-translate-y-px transition-all duration-200">Hire Me</a>
+  <!-- <a href="mailto:saznina21@gmail.com" class="magnetic font-mono text-[0.75rem] tracking-[0.06em] px-6 py-[10px] bg-dp text-white rounded-full hover:bg-accent hover:-translate-y-px transition-all duration-200">Hire Me</a> -->
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=saznina21@gmail.com&su=Hiring%20Inquiry&body=Hello%20Saznina,"
+   target="_blank"
+   class="magnetic font-mono text-[0.75rem] tracking-[0.06em] px-6 py-[10px] bg-dp text-white rounded-full hover:bg-accent hover:-translate-y-px transition-all duration-200">
+   Hire Me
+</a>
 </nav>
 
 <!-- ══════════════════ HERO ══════════════════ -->
@@ -705,79 +708,109 @@ user-focused</em> website</h2>
     </div>
     <div class="flex flex-col">
 
-      <div class="proj-row rv grid items-center py-[30px] border-b border-dp/[0.08] cursor-pointer max-[960px]:grid-cols-[52px_1fr_32px]" style="grid-template-columns:72px 1fr 200px 40px;gap:32px;" data-bg="#1a0a3c" data-em="🛍️" data-sub="E-Commerce Platform">
+  
+ <a href="https:theshawon.com" target="_blank" class="block"> <div class="proj-row rv d2 grid items-center py-[30px] border-b border-dp/[0.08] cursor-pointer max-[960px]:grid-cols-[52px_1fr_32px]" style="grid-template-columns:72px 1fr 200px 40px;gap:32px;" data-bg="#0d0a2e" data-em="🏢" data-sub="Agency Website">
         <span class="font-mono text-[0.68rem] text-muted tracking-[0.1em]">01</span>
-        <div>
-          <div class="font-display text-[1.55rem] font-bold text-dp transition-colors duration-200 hover:text-accent proj-name">NexaShop</div>
-          <div class="text-[0.82rem] text-muted mt-1">E-Commerce Platform</div>
-        </div>
-        <div class="flex gap-1.5 flex-wrap max-[960px]:hidden">
-          <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">React</span>
-          <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">Tailwind</span>
-          <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">Commerce</span>
-        </div>
-        <span class="text-[1.3rem] text-muted transition-all duration-300 proj-arrow">↗</span>
-      </div>
-
-      <div class="proj-row rv d1 grid items-center py-[30px] border-b border-dp/[0.08] cursor-pointer max-[960px]:grid-cols-[52px_1fr_32px]" style="grid-template-columns:72px 1fr 200px 40px;gap:32px;" data-bg="#0a1535" data-em="💬" data-sub="Real-time Chat App">
-        <span class="font-mono text-[0.68rem] text-muted tracking-[0.1em]">02</span>
-        <div>
-          <div class="font-display text-[1.55rem] font-bold text-dp proj-name">Pulse Chat</div>
-          <div class="text-[0.82rem] text-muted mt-1">Real-time Chat App</div>
-        </div>
-        <div class="flex gap-1.5 flex-wrap max-[960px]:hidden">
-          <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">JS</span>
-          <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">WebSockets</span>
-          <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">UI/UX</span>
-        </div>
-        <span class="text-[1.3rem] text-muted transition-all duration-300 proj-arrow">↗</span>
-      </div>
-
-      <div class="proj-row rv d2 grid items-center py-[30px] border-b border-dp/[0.08] cursor-pointer max-[960px]:grid-cols-[52px_1fr_32px]" style="grid-template-columns:72px 1fr 200px 40px;gap:32px;" data-bg="#0d0a2e" data-em="🏢" data-sub="Agency Website">
-        <span class="font-mono text-[0.68rem] text-muted tracking-[0.1em]">03</span>
         <div>
           <div class="font-display text-[1.55rem] font-bold text-dp proj-name">The Shawon Agency</div>
           <div class="text-[0.82rem] text-muted mt-1">Agency Website · GSAP</div>
         </div>
         <div class="flex gap-1.5 flex-wrap max-[960px]:hidden">
           <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">HTML/CSS</span>
+          <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">JavaScript</span>
           <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">GSAP</span>
-          <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">Lenis</span>
         </div>
         <span class="text-[1.3rem] text-muted transition-all duration-300 proj-arrow">↗</span>
-      </div>
+      </div></a>    
 
-      <div class="proj-row rv d3 grid items-center py-[30px] border-b border-dp/[0.08] cursor-pointer max-[960px]:grid-cols-[52px_1fr_32px]" style="grid-template-columns:72px 1fr 200px 40px;gap:32px;" data-bg="#0a1a10" data-em="📊" data-sub="Analytics Dashboard">
-        <span class="font-mono text-[0.68rem] text-muted tracking-[0.1em]">04</span>
+       <a href="https:radianitbd.com" target="_blank" class="block"> <div class="proj-row rv d2 grid items-center py-[30px] border-b border-dp/[0.08] cursor-pointer max-[960px]:grid-cols-[52px_1fr_32px]" style="grid-template-columns:72px 1fr 200px 40px;gap:32px;" data-bg="#0d0a2e" data-em="💻" data-sub="Learning Management System Website">
+        <span class="font-mono text-[0.68rem] text-muted tracking-[0.1em]">02</span>
         <div>
-          <div class="font-display text-[1.55rem] font-bold text-dp proj-name">DataFlow Dashboard</div>
-          <div class="text-[0.82rem] text-muted mt-1">Analytics Platform</div>
+          <div class="font-display text-[1.55rem] font-bold text-dp proj-name">Radian IT</div>
+          <div class="text-[0.82rem] text-muted mt-1">Learning Management System Website</div>
         </div>
         <div class="flex gap-1.5 flex-wrap max-[960px]:hidden">
-          <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">React</span>
-          <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">D3.js</span>
-          <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">Charts</span>
+          <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">LMS Tutor</span>
+          <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">Elementor</span>
+          <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">Royal Addons</span>
         </div>
         <span class="text-[1.3rem] text-muted transition-all duration-300 proj-arrow">↗</span>
-      </div>
+      </div></a> 
 
-      <div class="proj-row rv d4 grid items-center py-[30px] border-b border-dp/[0.08] cursor-pointer max-[960px]:grid-cols-[52px_1fr_32px]" style="grid-template-columns:72px 1fr 200px 40px;gap:32px;" data-bg="#1a1000" data-em="🏥" data-sub="Healthcare Website">
-        <span class="font-mono text-[0.68rem] text-muted tracking-[0.1em]">05</span>
+      
+<a href="https:biozonemedicalservicesbd.com" target="_blank" class="block"><div class="proj-row rv d4 grid items-center py-[30px] border-b border-dp/[0.08] cursor-pointer max-[960px]:grid-cols-[52px_1fr_32px]" style="grid-template-columns:72px 1fr 200px 40px;gap:32px;" data-bg="#1a1000" data-em="🏥" data-sub="Healthcare product Website">
+        <span class="font-mono text-[0.68rem] text-muted tracking-[0.1em]">03</span>
         <div>
           <div class="font-display text-[1.55rem] font-bold text-dp proj-name">BioZone Medical</div>
-          <div class="text-[0.82rem] text-muted mt-1">Healthcare · WordPress</div>
+          <div class="text-[0.82rem] text-muted mt-1">Healthcare Product · WordPress</div>
         </div>
         <div class="flex gap-1.5 flex-wrap max-[960px]:hidden">
           <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">WordPress</span>
           <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">Elementor</span>
         </div>
         <span class="text-[1.3rem] text-muted transition-all duration-300 proj-arrow">↗</span>
-      </div>
+      </div></a>
+   
+   <a href="https://blue.radiantechbd.com/wp/" target="_blank" class="block">
+  <div class="proj-row rv d3 grid items-center py-[30px] border-b border-dp/[0.08] cursor-pointer max-[960px]:grid-cols-[52px_1fr_32px]"
+       style="grid-template-columns:72px 1fr 200px 40px;gap:32px;"
+       data-bg="#0a1a10"
+       data-em="🍽️"
+       data-sub="Restaurant Website">
 
+    <span class="font-mono text-[0.68rem] text-muted tracking-[0.1em]">04</span>
+
+    <div>
+      <div class="font-display text-[1.55rem] font-bold text-dp proj-name">
+        BBQ Restaurant Website
+      </div>
+      <div class="text-[0.82rem] text-muted mt-1">
+        Restaurant Website
+      </div>
+    </div>
+
+    <div class="flex gap-1.5 flex-wrap max-[960px]:hidden">
+      <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">Elementor</span>
+      <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">Astra</span>
+    </div>
+
+    <span class="text-[1.3rem] text-muted transition-all duration-300 proj-arrow">↗</span>
+
+  </div>
+</a>
+ <a href="https://radiantechbd.com" target="_blank" class="block">
+  <div class="proj-row rv d3 grid items-center py-[30px] border-b border-dp/[0.08] cursor-pointer max-[960px]:grid-cols-[52px_1fr_32px]"
+       style="grid-template-columns:72px 1fr 200px 40px;gap:32px;"
+       data-bg="#0a1a10"
+       data-em="💼"
+       data-sub="Agency Website">
+
+    <span class="font-mono text-[0.68rem] text-muted tracking-[0.1em]">05</span>
+
+    <div>
+      <div class="font-display text-[1.55rem] font-bold text-dp proj-name">
+       Radian Tech
+      </div>
+      <div class="text-[0.82rem] text-muted mt-1">
+        Agency website
+      </div>
+    </div>
+
+    <div class="flex gap-1.5 flex-wrap max-[960px]:hidden">
+      <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">HTML</span>
+      <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">CSS</span>
+      <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">JavaScript</span>
+            <span class="font-mono text-[0.62rem] tracking-[0.08em] uppercase px-2.5 py-1 rounded-full border border-accent/[0.12] text-muted bg-white">TailWind</span>
+
+    </div>
+
+    <span class="text-[1.3rem] text-muted transition-all duration-300 proj-arrow">↗</span>
+
+  </div>
+</a>
     </div>
   </div>
 </section>
-
 <!-- ══════════════════ SERVICES ══════════════════ -->
 <section id="services" class="py-[110px] relative z-[1] bg-dp">
   <div class="max-w-[1200px] mx-auto px-16 max-[960px]:px-6">
@@ -790,14 +823,21 @@ user-focused</em> website</h2>
         <div class="font-mono text-[0.65rem] tracking-[0.15em] text-white/25 mb-5">01</div>
         <div class="text-[2.2rem] mb-[18px]">💻</div>
         <h3 class="font-display text-[1.15rem] font-bold text-white mb-2.5">Frontend Development</h3>
-        <p class="text-[0.88rem] text-white/45 leading-[1.75]">Semantic HTML, modern CSS, vanilla JS, and React — fast, accessible, pixel-perfect on every device.</p>
+        <p class="text-[0.88rem] text-white/45 leading-[1.75]">Semantic HTML, modern CSS, JS and accessible, pixel-perfect on every device.</p>
       </div>
 
       <div class="svc-card bg-white/[0.03] p-10 border-r border-white/[0.06] border-b border-b-white/[0.06] rv d1 hover:bg-white/[0.06]">
         <div class="font-mono text-[0.65rem] tracking-[0.15em] text-white/25 mb-5">02</div>
-        <div class="text-[2.2rem] mb-[18px]">🎭</div>
-        <h3 class="font-display text-[1.15rem] font-bold text-white mb-2.5">Web Animation</h3>
-        <p class="text-[0.88rem] text-white/45 leading-[1.75]">GSAP timelines, Lenis inertia, scroll-triggered sequences and micro-interactions that breathe life.</p>
+        <div class="text-[2.2rem] mb-[18px]">🤖</div>
+        <h3 class="font-display text-[1.15rem] font-bold text-white mb-2.5">AI Workflow</h3>
+        <p class="text-[0.88rem] text-white/45 leading-[1.75]">Leveraging ChatGPT, Claude, Cursor, GitHub Copilot, and AI tools to accelerate development, content creation, debugging, and productivity.</p>
+      </div>
+
+            <div class="svc-card bg-white/[0.03] p-10 border-r border-white/[0.06] rv d3 hover:bg-white/[0.06]">
+        <div class="font-mono text-[0.65rem] tracking-[0.15em] text-white/25 mb-5">04</div>
+        <div class="text-[2.2rem] mb-[18px]">🌐</div>
+        <h3 class="font-display text-[1.15rem] font-bold text-white mb-2.5">WordPress Dev</h3>
+        <p class="text-[0.88rem] text-white/45 leading-[1.75]">Custom themes, Elementor builds, performance tuning, and plugin integrations for scalable sites.</p>
       </div>
 
       <div class="svc-card bg-white/[0.03] p-10 border-b border-b-white/[0.06] rv d2 hover:bg-white/[0.06]">
@@ -807,18 +847,13 @@ user-focused</em> website</h2>
         <p class="text-[0.88rem] text-white/45 leading-[1.75]">Design systems, Figma prototyping, and visual identities that look intentional and feel effortless.</p>
       </div>
 
-      <div class="svc-card bg-white/[0.03] p-10 border-r border-white/[0.06] rv d3 hover:bg-white/[0.06]">
-        <div class="font-mono text-[0.65rem] tracking-[0.15em] text-white/25 mb-5">04</div>
-        <div class="text-[2.2rem] mb-[18px]">🌐</div>
-        <h3 class="font-display text-[1.15rem] font-bold text-white mb-2.5">WordPress Dev</h3>
-        <p class="text-[0.88rem] text-white/45 leading-[1.75]">Custom themes, Elementor builds, performance tuning, and plugin integrations for scalable sites.</p>
-      </div>
+
 
       <div class="svc-card bg-white/[0.03] p-10 border-r border-white/[0.06] rv d4 hover:bg-white/[0.06]">
         <div class="font-mono text-[0.65rem] tracking-[0.15em] text-white/25 mb-5">05</div>
-        <div class="text-[2.2rem] mb-[18px]">📱</div>
-        <h3 class="font-display text-[1.15rem] font-bold text-white mb-2.5">Responsive Design</h3>
-        <p class="text-[0.88rem] text-white/45 leading-[1.75]">Fluid layouts that look impeccable from a 4K monitor to a mobile screen in a pocket.</p>
+        <div class="text-[2.2rem] mb-[18px]">⚙️</div>
+        <h3 class="font-display text-[1.15rem] font-bold text-white mb-2.5">Website Management</h3>
+        <p class="text-[0.88rem] text-white/45 leading-[1.75]">Website deployment, backups, security updates, performance optimization, uptime monitoring, and routine maintenance.</p>
       </div>
 
       <div class="svc-card bg-white/[0.03] p-10 rv d1 hover:bg-white/[0.06]">
@@ -844,17 +879,27 @@ user-focused</em> website</h2>
           Her attention to detail and ability to translate design vision into
           living, breathing interfaces is genuinely rare.
         </p>
-        <div class="rv d2 flex items-center gap-3.5">
-          <div class="w-11 h-11 bg-surface2 rounded-full border-2 border-accent/[0.12] flex items-center justify-center text-[1.1rem]">🙂</div>
-          <div>
-            <div class="font-body text-[0.9rem] font-semibold text-dp">Client Name</div>
-            <div class="font-mono text-[0.68rem] text-muted tracking-[0.06em]">Founder, Company Name</div>
-          </div>
-        </div>
+     <div class="rv d2 flex items-center gap-3.5">
+  <div class="w-11 h-11 rounded-full border-2 border-accent/[0.12] overflow-hidden flex items-center justify-center">
+    <img src="img/rodla.jpeg"
+         alt="Rodla Sultana"
+         class="w-full h-full object-cover">
+  </div>
+
+  <div>
+    <div class="font-body text-[0.9rem] font-semibold text-dp">
+      Rodla Sultana
+    </div>
+    <div class="font-mono text-[0.68rem] text-muted tracking-[0.06em]">
+      Founder, Radian IT
+    </div>
+  </div>
+</div>
+     
       </div>
       <div class="flex flex-col gap-4">
         <div class="rv d1 bg-white border border-dp/[0.08] rounded-2xl px-7 py-7 hover:border-accent hover:shadow-[0_8px_32px_rgba(108,43,217,0.1)] transition-all duration-300">
-          <div class="font-display text-[2.6rem] font-bold text-dp leading-none" data-count="25">25<sup class="text-accent text-[1.4rem]">+</sup></div>
+          <div class="font-display text-[2.6rem] font-bold text-dp leading-none" data-count="21">21<sup class="text-accent text-[1.4rem]">+</sup></div>
           <div class="font-mono text-[0.68rem] text-muted tracking-[0.1em] uppercase mt-1.5">Projects Completed</div>
         </div>
         <div class="rv d2 bg-white border border-dp/[0.08] rounded-2xl px-7 py-7 hover:border-accent hover:shadow-[0_8px_32px_rgba(108,43,217,0.1)] transition-all duration-300">
@@ -882,15 +927,44 @@ user-focused</em> website</h2>
         I&rsquo;m always open to interesting projects and good conversations.
       </p>
       <div class="rv d3 flex gap-3.5 justify-center flex-wrap mb-[52px]">
-        <a href="mailto:saznina21@gmail.com" class="magnetic inline-flex items-center gap-2 bg-white text-dp px-[34px] py-[15px] rounded-full font-body text-[0.88rem] font-semibold hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(255,255,255,0.2)] transition-all duration-200">Send an Email →</a>
+        <!-- <a href="mailto:saznina21@gmail.com" class="magnetic inline-flex items-center gap-2 bg-white text-dp px-[34px] py-[15px] rounded-full font-body text-[0.88rem] font-semibold hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(255,255,255,0.2)] transition-all duration-200">Send an Email →</a> -->
+       
+       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saznina21@gmail.com&su=Project%20Inquiry&body=Hello%20Saznina,"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="magnetic inline-flex items-center gap-2 bg-white text-dp px-[34px] py-[15px] rounded-full font-body text-[0.88rem] font-semibold hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(255,255,255,0.2)] transition-all duration-200">
+   Send an Email →
+</a>
         <a href="https://drive.google.com/uc?export=download&id=1SHbZeRIVFMJtWOmTLGiOMRrHVblem2um" class="magnetic inline-flex items-center gap-2 border border-white/20 text-white/80 px-[34px] py-[15px] rounded-full font-body text-[0.88rem] font-medium hover:border-white/50 hover:bg-white/[0.06] transition-all duration-200" target="_blank" rel="noopener">Download CV</a>
       </div>
-      <div class="rv d4 flex gap-8 justify-center">
+      <!-- <div class="rv d4 flex gap-8 justify-center">
         <a href="#" class="font-mono text-[0.72rem] text-white/35 tracking-[0.1em] uppercase hover:text-accent3 transition-colors duration-200">LinkedIn ↗</a>
         <a href="#" class="font-mono text-[0.72rem] text-white/35 tracking-[0.1em] uppercase hover:text-accent3 transition-colors duration-200">GitHub ↗</a>
         <a href="#" class="font-mono text-[0.72rem] text-white/35 tracking-[0.1em] uppercase hover:text-accent3 transition-colors duration-200">Behance ↗</a>
         <a href="#" class="font-mono text-[0.72rem] text-white/35 tracking-[0.1em] uppercase hover:text-accent3 transition-colors duration-200">Dribbble ↗</a>
-      </div>
+      </div> -->
+   
+   <div class="rv d4 flex gap-6 justify-center text-xl">
+
+  <a href="https://linkedin.com/in/sazninaupo"
+     target="_blank"
+     class="text-white/35 hover:text-[#0A66C2] transition-all duration-300 hover:scale-110">
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://github.com/sazninaupo"
+     target="_blank"
+     class="text-white/35 hover:text-white transition-all duration-300 hover:scale-110">
+    <i class="fa-brands fa-github"></i>
+  </a>
+
+  <!-- <a href="https://behance.net/yourusername"
+     target="_blank"
+     class="text-white/35 hover:text-[#1769FF] transition-all duration-300 hover:scale-110">
+    <i class="fa-brands fa-behance"></i>
+  </a> -->
+
+</div>
     </div>
   </div>
 </section>
